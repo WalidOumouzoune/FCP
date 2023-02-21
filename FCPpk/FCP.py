@@ -150,7 +150,7 @@ def get_games_by_country(country: str) -> None | list:
     today = date.today()
 
     if not country.lower() in COMPETITIONS:
-        raise ValueError(f"{country} doesn't exist")
+        raise ValueError(f"{country} doesn't exit visit country_list: https://github.com/code50/73303972/tree/main/CS50p/project#country-code")
 
     # the season is always a year late than the current one
     season = today.year - 1
