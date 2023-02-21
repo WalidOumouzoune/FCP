@@ -53,7 +53,7 @@ def filter_flags(args) -> bool | dict:
             return False
     else:
         country = args.c
-        if country not in COMPETITIONS:
+        if country.lower() not in COMPETITIONS:
             sys.exit("country doesn't exit visit country_list: https://github.com/code50/73303972/tree/main/CS50p/project#country-code")
         games = get_games_by_country(country)
 
