@@ -47,8 +47,6 @@ from datetime import date
 from FCPpk.consts import TOP_COMPETITIONS, COMPETITIONS, TIMEZONES, TODAYS_TOP
 
 
-# "d6945347736976d8f423047935da8706"
-
 api_key = os.environ.get("API_KEY")
 if not api_key:
     sys.exit("Export API_KEY first 🙏")
